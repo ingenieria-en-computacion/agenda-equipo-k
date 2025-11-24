@@ -6,7 +6,7 @@
 enum TipoTelefono {CASA, MOVIL, OFICINA, OTRO};
 enum Mes{ENERO, FEBRERO, MARZO, ABRIL, MAYO, JUNIO, JULIO, AGOSTO, SEPTIEMBRE, OCTUBRE, NOVIEMBRE, DICIEMBRE};
 
-struct Persona{
+struct Persona{ //Diane
     char nombre[30];
     char apellido[30]; // apellido
     char mes[15]; // mes de nacimiento
@@ -14,7 +14,7 @@ struct Persona{
     char tipo_contacto[15]; // tipo contacto
     char numero[15]; // numero de telefono
     char tipo_numero[15]; // tipo de numero
-};
+}; // Se completo la cantidad de datos que se ocupan
 
 typedef struct Persona Contacto;
 

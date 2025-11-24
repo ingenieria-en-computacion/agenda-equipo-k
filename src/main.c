@@ -29,16 +29,16 @@ int main() {
 
         switch (opcion)
         {
-        case 1:
+        case 1: //Caso para agregar contacto -Yamil
             leer_contacto(&c);
             agregar_contacto(&miAgendaPrueba, c);
             break;
         
-        case 2:
+        case 2: //Caso para mostrar agenda -Yamil
             imprimir_agenda(miAgendaPrueba);
             break;
         
-        case 3:
+        case 3: //Cas para buscar contacto por nombre -Yamil
             printf("ingrese el nombre que quiere buscar: ");
             scanf("%s", nombre);
             
@@ -53,7 +53,7 @@ int main() {
             }
             break;
         
-        case 4:
+        case 4: //Caso para buscar contacto por telefono -Yamil
             printf("Escribe el telefono de la persona que quiere buscar: ");
             scanf("%s", telefono);
 
@@ -69,27 +69,27 @@ int main() {
             }
             break;
 
-        case 5:
+        case 5: //Caso para ordenar contactos de forma ascendente -Yamil 
             ordenar_contactos(&miAgendaPrueba);
             printf("Agenda ordenada en forma ascendente.\n");
             break;
 
-        case 6:
+        case 6: //caso para ordentar contactos de forma descendente -Yamil
             ordenar_contactos_inv(&miAgendaPrueba);
             printf("Agenda ordenada en forma descendente.\n");
             break;
 
-        case 7:
+        case 7: //Caso para guardar contactos en el archivo -Yamil
             guardar_contactos("agenda.txt", &miAgendaPrueba);
             printf("Datos de la agenda guardados con exito en el archivo");
             break;
 
-        case 8:
+        case 8: //Caso para cargar los contactos del archivo a la RAM -Yamil
             cargar_contactos("agenda.txt", &miAgendaPrueba);
             printf("Datos del archivo cargados con exito en la agenda");
             break;
 
-        case 9:
+        case 9: //Caso para salir del programa -Ivan
             printf("Saliendo de la agenda\n\n");
             break;
 
@@ -97,7 +97,7 @@ int main() {
             printf("Opción invalida, intente de nuevo.\n");
         }
 
-    } while (opcion != 9);
+    } while (opcion != 9); //Funcion para siempre tener el menu o una opcion en marcha -Yamil
     
     return 0;
 
