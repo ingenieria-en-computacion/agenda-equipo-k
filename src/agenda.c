@@ -14,14 +14,12 @@ void iniciar_agenda(Agenda *agenda){ // Ivan
 
 
 
-// Varible que lleva la cuenta de cuantos contactos hay en la agenda
-int num_contactos;
 
 /**
  * Esta función sirve para agregar un contacto nuevo en la agenda
  */
 void agregar_contacto(Agenda *agenda, Contacto c){ // Diane
-    if (num_contactos < MAX_CONTACTOS){ // Se comparo el numero de contactos para que sea menor que el maximo numero de contactos
+    if (agenda->num_contactos < MAX_CONTACTOS){ // Se comparo el numero de contactos para que sea menor que el maximo numero de contactos
         agenda->contactos[agenda->num_contactos] = c; // Se le asigna los valores guardados previamente en c al ultimo contacto
         agenda->num_contactos++; // Se le agrega 1 al numero de contactos guardados
     }else{
